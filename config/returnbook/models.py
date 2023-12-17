@@ -7,7 +7,6 @@ class ReturnBook(models.Model):
     username = models.ForeignKey(User, on_delete=models.CASCADE)
     borrow_book_id = models.ForeignKey(BorrowBook, on_delete=models.CASCADE)
     returnDate = models.DateField()
-    condition = models.CharField(max_length=20)
     isOverdue = models.BooleanField(default=False)
 
     def __str__(self):

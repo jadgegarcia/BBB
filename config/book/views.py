@@ -29,18 +29,12 @@ class Detail(View):
             username = request.session['username']
         except KeyError:
             return HttpResponseRedirect('/login')
-
         print("Inside detail username:" + username)
-
-
 
         big_bad_books = getDetails(isbn)
         #big_bad_books = get_object_or_404(BigBadBook, isbn=isbn)
 
         return render(request, self.template, {"books": big_bad_books, "uname": username, "isbn": isbn})
-
-
-
 
 
 def getBook(request):

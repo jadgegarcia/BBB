@@ -56,7 +56,7 @@ a {
           <a class="nav-link" href="{% url 'requestbook:request' %}">Request</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="{% url 'returnbook:returnlist' %}">Return</a>
+          <a class="nav-link active" href="{% url 'returnbook:returnbook' request.session.username %}">Return</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="{% url 'mapper:signout' %}">Logout</a>

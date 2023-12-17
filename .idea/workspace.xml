@@ -4,97 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb4a3161-64a2-451e-93b3-19d2b96e52fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BBB.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/account/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/account/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/account/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/account/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/account/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/account/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/account/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/book/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/book/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/book/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/book/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/book/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/book/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/book/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/book/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/migrations/0002_alter_borrowbook_book_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/borrowbook/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/donationbook/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mapper/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/requestbook/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/returnbook/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/static/images/BigBadBooks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/static/images/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/basics/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/basics/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/basics/signin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/basics/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/basics/welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/book/books_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/book/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/donationbook/donate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/request/request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/request/request_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/templates/return/returnbook.html" afterDir="false" />
+    <list default="true" id="fb4a3161-64a2-451e-93b3-19d2b96e52fd" name="Changes" comment="Donate, Request, and Borrow done">
+      <change afterPath="$PROJECT_DIR$/config/returnbook/migrations/0002_remove_returnbook_condition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/book/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/returnbook/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/returnbook/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/returnbook/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/returnbook/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/returnbook/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/returnbook/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/config/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/return/returnbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/config/templates/return/returnbook.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +40,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Jadge/PycharmProjects/BBB/config/templates/return"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jadge/PycharmProjects/BBB/config/templates/return&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jadge\PycharmProjects\BBB\config\templates\return" />
@@ -153,9 +71,28 @@
       <option name="presentableId" value="Default" />
       <updated>1702606141664</updated>
     </task>
+    <task id="LOCAL-00001" summary="Donate, Request, and Borrow done">
+      <option name="closed" value="true" />
+      <created>1702783996179</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702783996179</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Donate, Request, and Borrow done">
+      <option name="closed" value="true" />
+      <created>1702784396047</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702784396047</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Donate, Request, and Borrow done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Donate, Request, and Borrow done" />
   </component>
 </project>
