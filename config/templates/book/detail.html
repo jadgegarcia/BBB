@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Book Detail{% endblock %}
+
+{% block content %}
+<div class='card'>
+  <div class='card-header' style='font-size: 32px;'>
+      Book Detail:
+  </div>
+
+  <!--div class='card-body'>
+    <div class='row'>
+      <div class='col-md-8'>
+        <div class='row'>
+          <div class='col-md-4'>ISBN:</div>
+          <div class='col-md-8'>{{books.0}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Title:</div>
+          <div class='col-md-8'>{{books.1}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Author:</div>
+          <div class='col-md-8'>{{books.2}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Genre:</div>
+          <div class='col-md-8'>{{books.3}}</div>
+        </div>
+      </div>
+
+      <div class='col-md-4'>
+        <img class='center-block img-responsive'>
+      </div>
+    </div>
+  </div-->
+  <div class="table-responsive">
+      <div class='card-body'>
+        <div class='row'>
+            {% for book in books %}
+                <div class='col-md-8'>
+                <div class='row'>
+                  <div class='col-md-2' style='font-size: 24px;'>ISBN:</div>
+                  <div class='col-md-2' style='font-size: 24px;'>{{book.0}}</div>
+                </div>
+                <div class='row'>
+                  <div class='col-md-2' style='font-size: 24px;'>Title:</div>
+                  <div class='col-md-2' style='font-size: 24px;'>{{book.1}}</div>
+                </div>
+                <div class='row'>
+                  <div class='col-md-2' style='font-size: 24px;'>Author:</div>
+                  <div class='col-md-2' style='font-size: 24px;'>{{book.2}}</div>
+                </div>
+                <div class='row'>
+                  <div class='col-md-2' style='font-size: 24px;'>Genre:</div>
+                  <div class='col-md-2' style='font-size: 24px;'>{{book.3}}</div>
+                </div>
+                <div class='row'>
+                  <div class='col-md-2' style='font-size: 24px;'>Quantity:</div>
+                  <div class='col-md-2' style='font-size: 24px;'>{{book.4}}</div>
+                </div>
+              </div>
+
+              <div class='row mt-3'>
+                  <div class='col-md-2' style='font-size: 24px;'> <a href="{% url 'borrow:borrow' book.0 %}" class="btn btn-primary">Borrow</a></div>
+
+              </div>
+
+            {% if message %}
+                <p>{{ message }}</p>
+            {% endif %}
+
+
+
+
+
+
+            {% endfor %}
+        </div>
+      </div>
+  </div>
+
+
+
+</div>
+{% endblock %}

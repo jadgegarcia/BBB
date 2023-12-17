@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+
+{% block title %}Books{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    Book List
+  </div>
+
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-2">Filter by:</div>
+      <div class="col-md-4">
+        <input type="text"/>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table mb-0">
+        <thead>
+          <tr>
+            <th class="text-center">
+              <button class="btn btn-outline-primary btn-sm  align-middle">Show Image</button>
+            </th>
+            <th class="col-sm-2 align-middle"></th>
+            <th class="text-center">ISBN</th>
+              <th class="text-center">Title</th>
+              <th class="text-center">Author</th>
+              <th class="text-center">Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+                {% for book in books %}
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                                <a href="{% url 'book:detail' book.0 %}" class="btn btn-outline-primary">View Details</a>
+                        </td>
+                        <td class="text-center">{{ book.0 }}</td>
+                        <td class="text-center">{{ book.1 }}</td>
+                        <td class="text-center">{{ book.2 }}</td>
+                        <td class="text-center">{{ book.3 }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

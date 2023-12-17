@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    Welcome
+  </div>
+  <div class="card-body">
+    <div class="container-fluid">
+      <div class="text-center">
+        <img src="{% static 'images/BigBadBooks.jpg' %}" style="height: 300px;padding-bottom:50px">
+      </div>
+
+      <div class="text-center">Developed by:</div>
+      <div class="text-center">
+        <h3>Kyle A. Canonigo</h3>
+      </div>
+
+      <div class="text-center">@kylecanonigo</div>
+      <div class="text-center">
+        <a href="kyle.canonigoa@cit.edu">kyle.canonigoa@cit.edu</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

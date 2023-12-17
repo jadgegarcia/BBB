@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Return Books{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    Borrowed Books
+  </div>
+
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table mb-0">
+        <thead>
+          <tr>
+            <th>Borrow ID</th>
+            <th>Book Title</th>
+            <th>Borrow Date</th>
+            <th>Due Date</th>
+            <th></th>
+          </tr>
+        </thead>
+          {% for borrowed_book in results %}
+            <tr>
+              <td>{{ borrowed_book.0 }}</td>
+              <td>{{ borrowed_book.1 }}</td>
+              <td>{{ borrowed_book.2 }}</td>
+              <td>{{ borrowed_book.3 }}</td>
+              <td><a href="{% url 'returnbook:returnbook' book.0 %}" class="btn btn-outline-primary">Return</a></td>
+            </tr>
+          {% endfor %}
+      </table>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+  <div class="card-header">
+    Returned Books
+  </div>
+
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table mb-0">
+        <thead>
+          <tr>
+            <th>Return Id</th>
+            <th>Issued To</th>
+            <th>Book Title</th>
+            <th>Borrow Date</th>
+            <th>Returned Date</th>
+            <th>Condition</th>
+            <th>isOverDue</th>
+          </tr>
+        </thead>
+          {% for ret in returned %}
+            <tr>
+              <td>{{ ret.0 }}</td>
+              <td>{{ ret.1 }}</td>
+              <td>{{ ret.2 }}</td>
+              <td>{{ ret.3 }}</td>
+              <td>{{ ret.4 }}</td>
+              <td>{{ ret.5 }}</td>
+              <td>{{ ret.6 }}</td>
+            </tr>
+          {% endfor %}
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

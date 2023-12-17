@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Donate Books{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <div class="card">
+  <div class="card-header">
+    Donate
+  </div>
+
+  <div class="card-body">
+    <form method="post" action="{% url 'donationbook:donate' %}">
+      {% csrf_token %}
+
+      {{ form.as_p }}
+
+      <div class="form-group row mb-2">
+        <div class=" col-md-4">
+          <button type="submit" class="btn btn-outline-primary btn-sm" style="width:80px;">Donate</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="card mt-4">
+  <div class="card-header">
+    Donated Books
+  </div>
+  <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="text-center">ID</th>
+            <th class="text-center">Date Donated</th>
+            <th class="text-center">ISBN</th>
+            <th class="text-center">Customer</th>
+            <th class="text-center">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if results %}
+              {% for row in results %}
+                <tr>
+                  <td class="text-center">{{ row.0 }}</td>
+                  <td class="text-center">{{ row.1 }}</td>
+                  <td class="text-center">{{ row.2 }}</td>
+                  <td class="text-center">{{ row.3 }}</td>
+                  <td class="text-center">{{ row.4 }}</td>
+                </tr>
+              {% endfor %}
+          {% else %}
+              <tr>
+                <td colspan="4">No results found.</td>
+              </tr>
+          {% endif %}
+        </tbody>
+      </table>
+  </div>
+</div>
+
+</body>
+
+
+</html>
+
+
+
+{% endblock %}

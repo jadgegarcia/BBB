@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Sign In Page:</h1>
+    <form method="post">
+       {% csrf_token %}
+       <pre>
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+
+    <input type="submit" name="btnLogin" value="Login"> <p style="color:red; padding-left: 35px;">{{msg}}</p>
+    <br>
+    Dont Have An Account? <a href="{% url 'mapper:signup' %}">Sign Up Here</a>
+       </pre>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <h1>Request List</h1>
+
+    <table border="2" width="1000" style="text-align: center">
+      <thead>
+        <tr>
+          <th>Request ID</th>
+          <th>User</th>
+          <th>Book Title</th>
+          <th>Book Author</th>
+          <th>Book Publisher</th>
+          <th>Book Publish Date</th>
+          <th>Request Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+       {% for row in results %}
+         <tr>
+            <td>{{ row.0 }}</td>
+            <td>{{ row.7 }}</td>
+            <td>{{ row.1 }}</td>
+            <td>{{ row.2 }}</td>
+            <td>{{ row.3 }}</td>
+            <td>{{ row.4 }}</td>
+            <td>{{ row.5 }}</td>
+            <td>{{ row.6 }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+
+</body>
+</html>
