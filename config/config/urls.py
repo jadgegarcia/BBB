@@ -10,4 +10,6 @@ urlpatterns = [
     path('book/', include('book.urls')),
     path('borrow/', include('borrowbook.urls')),
     path('return/', include('returnbook.urls')),
+    path('reserve/', include('reservebook.urls')),
+
 ]

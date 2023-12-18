@@ -19,28 +19,28 @@
             <th>Due Date</th>
           </tr>
         </thead>
-          {% for borrowed_book in borrowed_books %}
+          {% for b in borrowed_books %}
             <tr>
-              <td>{{ borrowed_book.0 }}</td>
-              <td>{{ borrowed_book.1 }}</td>
-              <td>{{ borrowed_book.2 }}</td>
-              <td>{{ borrowed_book.3 }}</td>
+              <td>{{ b.0 }}</td>
+              <td>{{ b.1 }}</td>
+              <td>{{ b.2 }}</td>
+              <td>{{ b.3 }}</td>
               <td>
-                  <a href="{% url 'returnbook:add' borrowed_book.0 %}" class="btn btn-outline-primary">Return Book</a>
+                  <form id="returnForm" action="{% url 'returnbook:returnbook' username %}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="borrow_id" value="{{ b.0 }}">
+                    <button type="submit" class="btn btn-outline-primary">Return Book</button>
+                  </form>
               </td>
+
+
+
+
             </tr>
           {% endfor %}
       </table>
     </div>
 
-      <!--form method="post">
-        {% csrf_token %}
-        <label for="borrow-id">Borrow ID:</label>
-        <input type="text" id="borrow-id" name="borrow_id"><br><br>
-        <label for="condition">Condition:</label>
-        <input type="text" id="condition" name="condition"><br><br>
-        <button class="btn btn-outline-primary btn-sm" style='width:100px'>Return Book</button>
-      </form-->
         <p>{{ msg }}</p>
   </div>
 </div>
@@ -56,11 +56,9 @@
         <thead>
           <tr>
             <th>Return Id</th>
-            <th>Issued To</th>
             <th>Book Title</th>
             <th>Borrow Date</th>
             <th>Returned Date</th>
-            <th>Condition</th>
             <th>isOverDue</th>
           </tr>
         </thead>
@@ -71,8 +69,6 @@
               <td>{{ returned_books.2 }}</td>
               <td>{{ returned_books.3 }}</td>
               <td>{{ returned_books.4 }}</td>
-              <td>{{ returned_books.5 }}</td>
-              <td>{{ returned_books.6 }}</td>
             </tr>
           {% endfor %}
       </table>

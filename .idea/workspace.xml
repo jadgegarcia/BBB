@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb4a3161-64a2-451e-93b3-19d2b96e52fd" name="Changes" comment="Donate, Request, and Borrow done">
-      <change afterPath="$PROJECT_DIR$/config/returnbook/migrations/0002_remove_returnbook_condition.py" afterDir="false" />
+    <list default="true" id="fb4a3161-64a2-451e-93b3-19d2b96e52fd" name="Changes" comment="Return display update incomplete">
+      <change afterPath="$PROJECT_DIR$/config/reservebook/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/reservebook/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/book/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/returnbook/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/returnbook/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/book/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/book/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/borrowbook/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/borrowbook/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/returnbook/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/returnbook/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/returnbook/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/returnbook/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/config/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/templates/book/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/config/templates/book/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/templates/return/returnbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/config/templates/return/returnbook.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,14 +51,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jadge/PycharmProjects/BBB/config/templates/return&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Jadge/PycharmProjects/Josiah"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jadge\PycharmProjects\BBB\config\templates\return" />
@@ -87,12 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702784396047</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Return display update incomplete">
+      <option name="closed" value="true" />
+      <created>1702823682778</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702823682778</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Donate, Request, and Borrow done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Donate, Request, and Borrow done" />
+    <MESSAGE value="Return display update incomplete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Return display update incomplete" />
   </component>
 </project>

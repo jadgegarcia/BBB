@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'donationbook',
     'borrowbook',
     'returnbook',
+    'reservebook',
 
 ]
 

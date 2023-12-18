@@ -7,7 +7,7 @@ from django.views import View
 # Create your views here.
 
 class Borrow(View):
-    template = 'return/returnbook.html'
+    template = 'book/books_list.html'
     def get(self, request, isbn):
         try:
             username = request.session['username']
@@ -31,8 +31,10 @@ class Borrow(View):
             cursor.callproc('GetBorrowedBooksByUser', args)
             results = cursor.fetchall()
             cursor.close()
-            return render(request, self.template, {'results': results, 'uname': username})
+            return redirect('book:books')
+            #return render(request, self.template)
             #return render(request, self.template, {"uname": username, "message": message, "isbn": isbn})
+
 
 
         return redirect('borrow:borrow')
