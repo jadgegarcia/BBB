@@ -30,7 +30,7 @@ class ReserveBook(View):
                 result = cursor.fetchone()
                 cursor.close()
                 connection.commit()
-
+                #aaaaaaaaaa
                 if result and result[0] == 'Reservation successful':
                     msg = "Reservation successful!"
                     return render(request, self.template, {'msg': msg})
