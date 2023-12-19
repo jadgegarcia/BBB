@@ -24,21 +24,43 @@ class ReserveBook(View):
         username = request.session['username']
         date = request.POST.get('reservedate')
 
+
         with connection.cursor() as cursor:
+
+            cursor.callproc('reserve_book', [date, username, isbn])
+            result = cursor.fetchall()
+            cursor.close()
+            connection.commit()
+            msg = result[0][0]
+            big_bad_books = getDetails(isbn)
+
+
             try:
-                cursor.callproc('reserve_book', [date, username, isbn])
-                result = cursor.fetchone()
-                cursor.close()
-                connection.commit()
+
                 #aaaaaaaaaa
-                if result and result[0] == 'Reservation successful':
-                    msg = "Reservation successful!"
-                    return render(request, self.template, {'msg': msg})
+                if 'Reservation successful' == msg:
+
+                    print("SUCCCCCCCCCCCCCCCCCCCESSSSSSSSSSSSSSSSSSSSSSSSSS")
+                    #msg = "Reservation successful!"
+                    big_bad_books = getBook(request)
+                    return render(request, self.template, {"books": big_bad_books, 'uname': username, 'msg': msg})
                 else:
-                    msg = "Failed to reserve this book."
-                    return redirect('reservebook:reservebook', isbn=isbn)
+                    raise Exception("Error")
             except Exception as e:
-                return HttpResponse(f'Error: {str(e)}')
+                if "Reservation date must be at least 3 weeks from now" == msg:
+                    print("SAAAAAAAAAAYOOOOOOOOOO KAAAAAAAAAAAAAAAYOOOOOOOOOOO")
+                    #msg = "Failed to reserve this book."
+                    print(msg)
+                    request.extra_data = ('msg', msg)
+                    #return redirect('book:detail', isbn=isbn)
+                    return render(request, 'book/detail.html', {"books": big_bad_books, 'uname': username, 'msg': msg})
+                else:
+                    print("NAKARESEEEEEEEEEEEEEERRRRVEEEEEEEEEEEE")
+                    print(msg)
+                    #request.extra_data = ('msg', msg)
+                    #return redirect('book:detail', isbn=isbn)
+                    return render(request, 'book/detail.html', {"books": big_bad_books, 'uname': username, 'msg': msg})
+
 
 
 
@@ -55,3 +77,17 @@ def getDetails(isbn):
     cursor.close()
 
     return results
+
+
+def getBook(request):
+    cursor = connection.cursor()
+
+    query = 'SELECT * FROM book_book'
+    cursor.execute(query)
+
+    results = cursor.fetchall()
+    cursor.close()
+
+    return results
+
+

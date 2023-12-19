@@ -3,37 +3,32 @@
 {% block title %}Book Detail{% endblock %}
 
 {% block content %}
+    {% if msg %}
+        {% if "Book is already reserved" in msg %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ msg }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% elif "Reservation successful" in msg %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ msg }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% elif "Reservation date must be at least 3 weeks from now" in msg %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ msg }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endif %}
+   {% endif %}
+
+
+
 <div class='card'>
   <div class='card-header' style='font-size: 32px;'>
       Book Detail:
   </div>
 
-  <!--div class='card-body'>
-    <div class='row'>
-      <div class='col-md-8'>
-        <div class='row'>
-          <div class='col-md-4'>ISBN:</div>
-          <div class='col-md-8'>{{books.0}}</div>
-        </div>
-        <div class='row'>
-          <div class='col-md-4'>Title:</div>
-          <div class='col-md-8'>{{books.1}}</div>
-        </div>
-        <div class='row'>
-          <div class='col-md-4'>Author:</div>
-          <div class='col-md-8'>{{books.2}}</div>
-        </div>
-        <div class='row'>
-          <div class='col-md-4'>Genre:</div>
-          <div class='col-md-8'>{{books.3}}</div>
-        </div>
-      </div>
-
-      <div class='col-md-4'>
-        <img class='center-block img-responsive'>
-      </div>
-    </div>
-  </div-->
   <div class="table-responsive">
       <div class='card-body'>
         <div class='row'>

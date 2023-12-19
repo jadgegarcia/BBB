@@ -4,26 +4,26 @@
 {% block title %}Books{% endblock %}
 
 {% block content %}
+{% if msg %}
+        {% if "Reservation successful" in msg %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ msg }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endif %}
+{% endif %}
 <div class="card">
   <div class="card-header">
     Book List
   </div>
 
   <div class="card-body">
-    <div class="row">
-      <div class="col-md-2">Filter by:</div>
-      <div class="col-md-4">
-        <input type="text"/>
-      </div>
-    </div>
 
     <div class="table-responsive">
       <table class="table mb-0">
         <thead>
           <tr>
-            <th class="text-center">
-              <button class="btn btn-outline-primary btn-sm  align-middle">Show Image</button>
-            </th>
+
             <th class="col-sm-2 align-middle"></th>
             <th class="text-center">ISBN</th>
               <th class="text-center">Title</th>
@@ -34,9 +34,6 @@
         <tbody>
                 {% for book in books %}
                     <tr>
-                        <td>
-
-                        </td>
                         <td>
                                 <a href="{% url 'book:detail' book.0 %}" class="btn btn-outline-primary">View Details</a>
                         </td>
